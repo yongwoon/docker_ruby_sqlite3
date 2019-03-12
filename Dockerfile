@@ -8,6 +8,7 @@ ENV rails_ver="5.2.2"
 RUN yum -y update && \
   yum -y install epel-release && \
   yum -y install net-tools && \
+  yum -y install nodejs --enablerepo=epel && \
   yum -y install git make autoconf curl wget && \
   yum -y install gcc-c++ glibc-headers openssl-devel readline libyaml-devel readline-devel zlib zlib-devel sqlite-devel bzip2 && \
   yum clean all

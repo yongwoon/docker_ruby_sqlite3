@@ -70,7 +70,11 @@ rails s -p 8000 -b '0.0.0.0'
 
 * Access url
 ```
+# in blorgh engine
 http://0.0.0.0:8000/blorgh
+
+# in unicorn
+http://localhost:8000/blog
 ```
 
 ------------------
